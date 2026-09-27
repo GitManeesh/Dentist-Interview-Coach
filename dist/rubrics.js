@@ -22,8 +22,9 @@ export function evaluateAnswer(answer,key){
  const text=(answer||'').trim();
  const criteria=rubrics[key]||rubrics.experience;
  if(!text)return {score:0,covered:[],missing:criteria.map(x=>x.name),tips:criteria.map(x=>x.tip),summary:'No answer was provided.'};
- const covered=criteria.filter(x=>x.pattern.test(text));
- const missing=criteria.filter(x=>!x.pattern.test(text));
+ const evidence=criteria.map(x=>{const match=x.pattern.exec(text);if(!match)return null;const start=Math.max(0,match.index-35),end=Math.min(text.length,match.index+match[0].length+65);return {criterion:x.name,excerpt:`${start?'…':''}${text.slice(start,end).trim()}${end<text.length?'…':''}`}}).filter(Boolean);
+ const covered=criteria.filter(x=>evidence.some(e=>e.criterion===x.name));
+ const missing=criteria.filter(x=>!evidence.some(e=>e.criterion===x.name));
  const score=Math.round(covered.length/criteria.length*10);
- return {score,covered:covered.map(x=>x.name),missing:missing.map(x=>x.name),tips:missing.map(x=>x.tip),summary:covered.length===criteria.length?'Your answer touched each main point in this practice rubric. Check factual accuracy and add a genuine example where relevant.':covered.length?'Your answer addresses '+covered.map(x=>x.name.toLowerCase()).join(' and ')+'. Add the missing points below.':'Your answer did not clearly address the main points for this question. Start with the first improvement below.'};
+ return {score,evidence,covered:covered.map(x=>x.name),missing:missing.map(x=>x.name),tips:missing.map(x=>x.tip),summary:covered.length===criteria.length?'Your answer includes language related to each rubric point. Check whether the statements are accurate and supported.':covered.length?'Your answer includes language related to '+covered.map(x=>x.name.toLowerCase()).join(' and ')+'. Add the missing points below.':'Your answer did not clearly address the main points for this question. Start with the first improvement below.'};
 }

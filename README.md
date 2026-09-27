@@ -28,3 +28,7 @@ node --check dist/reference.js
 ```
 
 Vercel uses `vercel.json` to publish the `dist` directory. No build command or environment variable is needed for the current static app.
+
+## Answer feedback
+
+The interview asks one follow-up about the first missing rubric point in an answered question. The report displays the exact answer excerpt that matched each point and a related reviewed source summary for mapped clinical topics. Matching words is **not** a clinical fact check: a negated, misleading, or unsafe statement can still match. The linked professional guidance must be read for clinical decisions. If no reviewed topic maps to a question, the report says so. This version does not retrieve the whole scanned textbook or call an AI model.
