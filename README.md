@@ -32,3 +32,7 @@ Vercel uses `vercel.json` to publish the `dist` directory. No build command or e
 ## Answer feedback
 
 The interview asks one follow-up about the first missing rubric point in an answered question. The report displays the exact answer excerpt that matched each point and a related reviewed source summary for mapped clinical topics. Matching words is **not** a clinical fact check: a negated, misleading, or unsafe statement can still match. The linked professional guidance must be read for clinical decisions. If no reviewed topic maps to a question, the report says so. This version does not retrieve the whole scanned textbook or call an AI model.
+
+## Practice dashboard
+
+The Dashboard displays topic averages, a trend across up to 12 saved sessions, the most frequently missed rubric points, and a suggested practice area. It saves up to 30 session summaries in browser local storage (scores, question labels, categories, missed rubric points and source mapping). The CV and full answer text are not stored in session history. Latest report remains a separate single-session summary. Older latest reports are not added to the new history automatically because their category and missing-point fields may not exist. Scores reflect keyword coverage, not clinical correctness or spoken delivery; sessions with different question sets should not be interpreted as directly comparable.
