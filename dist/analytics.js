@@ -1,6 +1,7 @@
 export const historyKey='dentalCoachSessionsV1';
-export const categories=['Clinical cases','Patient safety','Communication','CV and HR','Other'];
+export const categories=['Clinical cases','Patient safety','Communication','CV and HR','FSP Deutsch','Other'];
 export function categoryOf(r){
+ if(r.kind==='fsp')return 'FSP Deutsch';
  if(r.kind==='case')return 'Clinical cases';
  if(r.kind==='safety'||r.kind==='ethics')return 'Patient safety';
  if(r.kind==='communication'||r.kind==='team')return 'Communication';

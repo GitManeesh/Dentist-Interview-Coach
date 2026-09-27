@@ -36,3 +36,7 @@ The interview asks one follow-up about the first missing rubric point in an answ
 ## Practice dashboard
 
 The Dashboard displays topic averages, a trend across up to 12 saved sessions, the most frequently missed rubric points, and a suggested practice area. It saves up to 30 session summaries in browser local storage (scores, question labels, categories, missed rubric points and source mapping). The CV and full answer text are not stored in session history. Latest report remains a separate single-session summary. Older latest reports are not added to the new history automatically because their category and missing-point fields may not exist. Scores reflect keyword coverage, not clinical correctness or spoken delivery; sessions with different question sets should not be interpreted as directly comparable.
+
+## Dental Fachsprachprüfung practice
+
+FSP practice is a separate dentist-only mode with three linked 20-minute practice stations: simulated patient conversation, written case documentation and dentist-to-dentist handover. The fictional case and station format follow the [2026 Baden-Württemberg dental chamber information sheet](https://lzk-bw.de/fileadmin/user_upload/user_upload/Informationsblatt_1-2026.pdf). The app does not time or proctor the stations; “20 minutes” is a suggested practice duration. The keyword-based report cannot assess grammar, pronunciation, comprehensibility or exam eligibility, and it is not an official FSP result. Requirements vary by chamber; verify the actual format with the competent chamber.
