@@ -1,0 +1,6 @@
+site-archive.zip
+.openai/
+.vercel/
+*.pdf
+ocr-pages/
+ocr-text/
