@@ -1,16 +1,38 @@
-// Short editorial summaries. The scanned copyrighted book is not bundled with this public site.
-export const book={title:'In der Zahnarztpraxis: Behandlungsassistenz',publisher:'Cornelsen',year:2016};
-export const referenceTopics=[
- {id:'chairside',terms:'assistant assistenz patient betreuung treatment room chairside absaugung zfa',page:'44–47',kind:'team',en:'For chairside assistance, prepare the patient and materials, support visibility and suction during treatment, then help with aftercare and handover. Describe only tasks you actually performed and stay within your role.',de:'Bei der Behandlungsassistenz Patient und Materialien vorbereiten, während der Behandlung Sicht und Absaugung unterstützen und die Nachbetreuung begleiten. Nur selbst ausgeführte Aufgaben und die eigene Rolle beschreiben.',official:'https://www.bzaek.de/praxisteam/zahnmedizinische-fachangestellte/ausbildung-und-ausbildungsrahmenplan.html',officialName:'BZÄK · current ZFA training framework'},
- {id:'hygiene',terms:'hygiene sterilis instrument infection reprocessing praxishygiene aufbereitung desinfektion',page:'106, 120',kind:'safety',en:'Separate cleaning, disinfection and sterilisation; prepare reusable instruments according to the local validated process and manufacturer instructions. Handpieces need attention to internal and external contamination. Check current hygiene requirements before naming procedural settings.',de:'Reinigung, Desinfektion und Sterilisation unterscheiden; wiederverwendbare Instrumente nach validiertem Praxisverfahren und Herstellerangaben aufbereiten. Bei Übertragungsinstrumenten innere und äußere Kontamination beachten. Konkrete Vorgaben aktuell prüfen.',official:'https://www.rki.de/DE/Themen/Infektionskrankheiten/Krankenhaushygiene/Infektionshygiene-A-Z/M/Medizinprodukte/medizinprodukte-inhalt.html',officialName:'RKI · dental infection prevention'},
- {id:'caries',terms:'caries karies decay plaque sugar demineralisation',page:'134–136',kind:'clinical',en:'For a caries question, explain how plaque bacteria, fermentable carbohydrates and time contribute to acid exposure and demineralisation. Assess the patient before proposing treatment; prevention and options depend on the findings.',de:'Bei Kariesfragen erklären, wie Plaquebakterien, vergärbare Kohlenhydrate und Zeit zur Säurebildung und Demineralisation beitragen. Vor einer Therapieentscheidung den individuellen Befund erheben.',official:'https://www.sdcep.org.uk/published-guidance/',officialName:'SDCEP · published dental guidance'},
- {id:'swelling',terms:'swelling fever dental pain abscess infection schlucken schwellung zahnschmerzen',page:'257–269 (emergency chapter)',kind:'case',en:'Facial swelling with fever or difficulty swallowing calls for urgent assessment of airway and systemic warning signs. Explain escalation and referral under local emergency pathways; do not treat this as routine pain.',de:'Gesichtsschwellung mit Fieber oder Schluckbeschwerden erfordert eine dringliche Einschätzung von Atemweg und systemischen Warnzeichen. Nach örtlichem Notfallweg eskalieren und überweisen.',official:'https://www.sdcep.org.uk/published-guidance/acute-dental-problems/',officialName:'SDCEP · acute dental problems'},
- {id:'diabetes',terms:'diabetes gum bleed periodont gingivitis zahnfleisch',page:'325 onward (periodontal chapter)',kind:'case',en:'Review medical history, medicines and periodontal findings, and clarify uncertain diabetes control. Explain the relationship between diabetes and gum disease without claiming a diagnosis from symptoms alone; coordinate care and follow-up.',de:'Medizinische Anamnese, Medikamente und parodontalen Befund prüfen und unklare Diabeteskontrolle abklären. Den Zusammenhang mit Zahnfleischerkrankungen erklären, ohne allein aus Symptomen eine Diagnose abzuleiten.',official:'https://www.ada.org/resources/ada-library/oral-health-topics/diabetes',officialName:'ADA · diabetes and oral health'},
- {id:'anticoagulants',terms:'anticoagulant blood thinner extraction bleeding gerinnung extraktion',page:'271 onward (surgical assistance chapter)',kind:'case',en:'Before planning extraction, identify the exact drug, dose, timing, indication, procedure and bleeding risk. Never suggest changing an anticoagulant without assessing the specific medication and applicable current guidance.',de:'Vor einer Extraktion Wirkstoff, Dosis, Einnahmezeitpunkt, Indikation, Eingriff und Blutungsrisiko klären. Keine Änderung einer Antikoagulation ohne fallspezifische Prüfung aktueller Leitlinien empfehlen.',official:'https://www.sdcep.org.uk/published-guidance/anticoagulants-and-antiplatelets/',officialName:'SDCEP · anticoagulants and antiplatelets'},
- {id:'licensing',terms:'license licensing approbation recognition anerkennung qualification germany deutschland',page:null,kind:'cv',en:'Dentistry is a regulated profession in Germany. State your actual qualification and recognition status; check the responsible authority for Approbation or any applicable temporary authorisation. This is outside the assistant textbook’s scope.',de:'Zahnärztliche Tätigkeit ist in Deutschland reglementiert. Tatsächliche Qualifikation und Anerkennungsstand nennen; Approbation beziehungsweise eine mögliche Berufserlaubnis bei der zuständigen Stelle prüfen. Dies steht außerhalb des ZFA-Lehrbuchs.',official:'https://www.anerkennung-in-deutschland.de/html/de/2728.php',officialName:'Anerkennung in Deutschland · dentist'},
- {id:'endodontics',terms:'endodontic root canal pulp pulpitis nerv wurzel pulpa',page:'174 and following',kind:'clinical',en:'The book frames endodontics as assessment and treatment of pulp disease. In an interview, distinguish symptoms and findings from a diagnosis, explain the treatment options within your role, and seek current clinical guidance for technique.',de:'Das Buch behandelt Endodontie als Diagnostik und Therapie von Pulpaerkrankungen. Im Gespräch Symptome und Befund von der Diagnose trennen, Möglichkeiten im Rahmen der eigenen Rolle erklären und aktuelle Leitlinien für die Durchführung prüfen.',official:'https://www.sdcep.org.uk/published-guidance/acute-dental-problems/',officialName:'SDCEP · acute dental problems'},
- {id:'emergency',terms:'emergency first aid faint syncope anaphylaxis notfall erste hilfe',page:'257–269',kind:'safety',en:'The textbook emphasises recognising emergencies, checking vital functions, knowing where emergency equipment is and activating the clinic’s emergency plan. For a real event, follow current local training and emergency services protocols.',de:'Das Lehrbuch betont Notfallerkennung, Prüfung der Vitalfunktionen, Kenntnis der Notfallausrüstung und Alarmierung nach Praxisplan. Im Ernstfall gelten aktuelle örtliche Schulungen und Notfalldienste.',official:'https://www.sdcep.org.uk/published-guidance/acute-dental-problems/',officialName:'SDCEP · acute dental problems'},
- {id:'prevention',terms:'prevention prophylaxis fluoride plaque oral hygiene vorbeugung prophylaxe',page:'419–422',kind:'clinical',en:'Explain prevention as risk assessment, personal oral-hygiene support and suitable measures to avoid or detect disease early. Tailor advice to age, oral findings and individual risk rather than promising one intervention for everyone.',de:'Prophylaxe als Risikoabschätzung, individuelle Mundhygieneberatung und geeignete Maßnahmen zur Vorbeugung oder Früherkennung erklären. Empfehlungen an Alter, Befund und Risiko anpassen.',official:'https://www.ada.org/resources/ada-library/oral-health-topics/caries-risk-assessment-and-management',officialName:'ADA · caries risk assessment and management'}
-];
-export function matchReference(query){const words=String(query).toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').match(/[a-zäöüß]{4,}/g)||[];return referenceTopics.map(t=>({topic:t,score:words.filter(w=>t.terms.includes(w)||t.id.includes(w)).length})).filter(x=>x.score>0).sort((a,b)=>b.score-a.score).slice(0,3).map(x=>x.topic)}
-export function referenceFor(q){if(q.title?.includes('swelling'))return referenceTopics[3];if(q.title?.includes('diabetes'))return referenceTopics[4];if(q.title?.includes('anticoagulants'))return referenceTopics[5];if(q.rubricKey==='licensing')return referenceTopics[6];if(q.rubricKey==='safety')return referenceTopics[1];if(q.rubricKey==='procedures')return referenceTopics[2];if(q.kind==='team')return referenceTopics[0];return null}
+// The shared knowledge pack is a separate GitHub-editable JSON file.
+// Only reviewed, short summaries are published; the copyrighted textbook stays private.
+export let book=null;
+export let referenceTopics=[];
+export let referenceStatus='loading';
+export let referenceRevision='';
+
+export async function loadReferences(){
+ try{
+  const response=await fetch(new URL('./knowledge/sources.json',import.meta.url),{cache:'no-store'});
+  if(!response.ok)throw Error(`HTTP ${response.status}`);
+  const data=await response.json();
+  if(data.schemaVersion!==1||!Array.isArray(data.topics)||!data.topics.length)throw Error('Invalid source pack');
+  if(!data.topics.every(t=>{try{const url=new URL(t.official);return /^[a-z0-9-]{2,40}$/.test(t.id)&&typeof t.en==='string'&&typeof t.de==='string'&&typeof t.terms==='string'&&typeof t.officialName==='string'&&url.protocol==='https:'&&['sdcep.org.uk','ada.org','rki.de','bzaek.de','anerkennung-in-deutschland.de'].some(domain=>url.hostname===domain||url.hostname.endsWith('.'+domain))}catch{return false}}))throw Error('Unreviewed source entry');
+  book=data.book;
+  referenceTopics=data.topics;
+  referenceRevision=`${data.revision} · reviewed ${data.reviewedAt}`;
+  referenceStatus='ready';
+ }catch(e){referenceStatus='unavailable';referenceRevision='Source pack unavailable';console.error('Knowledge source pack could not load',e)}
+ return referenceStatus;
+}
+
+function tokens(value){return String(value||'').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').match(/[a-zäöüß]{4,}/g)||[]}
+export function matchReference(query){
+ if(referenceStatus!=='ready')return [];
+ const words=tokens(query);
+ return referenceTopics.map(topic=>{
+  const terms=tokens(`${topic.id} ${topic.terms}`);
+  const score=words.filter(word=>terms.some(term=>term===word||term.startsWith(word)&&word.length>=5)).length;
+  return {topic,score};
+ }).filter(x=>x.score>0).sort((a,b)=>b.score-a.score).slice(0,3).map(x=>x.topic);
+}
+export function referenceFor(q){
+ if(referenceStatus!=='ready'||!q)return null;
+ const title=String(q.title||'').toLowerCase();
+ const id=title.includes('swelling')?'swelling':title.includes('diabetes')?'diabetes':title.includes('anticoagulants')?'anticoagulants':q.rubricKey==='licensing'?'licensing':q.rubricKey==='safety'?'hygiene':q.rubricKey==='procedures'?'caries':q.kind==='team'?'chairside':null;
+ return referenceTopics.find(t=>t.id===id)||null;
+}
